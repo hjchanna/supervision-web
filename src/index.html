@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Supervision Technology</title>
+
+        <!--css-->
+        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/animate/animate.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+    </head>
+
+    <body>
+
+        <!--start preloader-->
+        <div id="loader">
+
+        </div>
+        <!--end preloader-->
+
+        <!--start navigation-->
+        <nav class="navbar navbar-primary navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">SUPERVISION</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="active"><a href="#products">PRODUCTS</a></li>
+                        <li><a href="#clients">CLIENTS</a></li>
+                        <li><a href="#contact-us">CONTACT US</a></li>
+                        <li><a href="#"  class="btn btn-success navbar-btn">CALL US | 0777-77 77 77</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--end navigation-->
+
+        <div class="container-fluid">
+            <!--start page home-->
+            <div id="home" class="page page-primary">
+            </div>
+            <!--end page home-->
+
+            <!--start page products-->
+            <div id="products" class="page page-dark">
+                <div class="page-title">
+                    <h1>OUR PRODUCT RANGE FIT TO YOUR BUSINESS</h1>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 product">
+
+                        </div>
+                        <div class="col-sm-3 product">
+
+                        </div>
+                        <div class="col-sm-3 product">
+
+                        </div>
+                        <div class="col-sm-3 product">
+
+                        </div>  
+                        <div class="col-sm-3 product">
+
+                        </div>
+                        <div class="col-sm-3 product">
+
+                        </div>
+                        <div class="col-sm-3 product">
+
+                        </div>
+                        <div class="col-sm-3 product">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end page products-->
+
+            <!--start page clients-->
+            <div id="clients" class="page page-light">
+                <div class="page-title">
+                    <h1>KEEP IN TOUCH WITH US</h1>
+                </div>
+
+
+
+                <div class="page-footer">
+                </div>
+            </div>
+            <!--end page clients-->
+
+            <!--start page contact us-->
+            <div id="contact-us" class="page page-dark">
+
+                <div class="footer">
+
+                </div>
+            </div>
+            <!--end page contact us-->
+        </div>
+
+        <script src="resources/jquery/jQuery-2.1.4.min.js"></script>
+        <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+
+        <script>
+
+            //start smooth scroll
+            $(function() {
+                $('a[href*="#"]:not([href="#"])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+
+                            return false;
+                        }
+                    }
+                });
+            });
+            //end smooth scroll
+
+            //start finish loader
+            //            $("#loader").animate({
+            //                opacity:0;
+            //            },500);
+            //end finish loader
+        </script>
+    </body>
+</html>
