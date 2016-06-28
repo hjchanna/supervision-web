@@ -4,12 +4,38 @@
     z-index: 5000;
     width: 100%;
     height: 100vh;
-    
+
     display: none; /* remove after development done */
 }
 
 .navbar{
     margin-bottom: 0px !important;
+    background-color: #062744;
+    min-height:72px !important;
+}
+
+.navbar-nav>li>a, .navbar-brand {
+    padding-top:27px !important; 
+    padding-bottom:0 !important;
+    height: 72px;
+    color: #ffffff !important;
+}
+
+.navbar-nav > li > a:hover{
+    background-color: #092f4c;
+}
+
+.navbar-brand{
+    margin-top: -14px;
+}
+
+.navbar-nav>.active>a,  .navbar-nav > li > a:focus {
+    background-color: #0e4b77 !important;
+}
+
+.navbar-nav>.success>a{
+    background-color: #84c441 !important;
+    font-weight: 800;
 }
 
 .container-fluid{
@@ -23,6 +49,37 @@
 
 .page-primary{
     background-color: #2690cf;
+    overflow: hidden;
+}
+
+.parallax{
+    /*    background-repeat: no-repeat;*/
+    /*    background-size: cover;*/
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+}
+
+.layer-1{
+    background: url(image/parallax/layer-1.png) ;
+}
+
+.layer-2{
+    background: url(image/parallax/layer-2.png) ;
+}
+
+.layer-3{
+    background: url(image/parallax/layer-3.png) ;
+}
+
+.page-primary > .content{
+/*
+    vertical-align: middle;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+*/
 }
 
 .page-light{
@@ -34,18 +91,18 @@
 }
 
 .page-title{
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
     color: #6d6f72;
 }
 
 .page-title:before{
-    content: '----------------';
+    content: url(image/before-line.png);
 }
 
 .page-title:after{
-    content: '----------------';
+    content: url(image/after-line.png);
 }
 
 .page-title > h1{
