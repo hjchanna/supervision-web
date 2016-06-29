@@ -7,6 +7,15 @@
         <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="resources/animate/animate.css">
         <link rel="stylesheet" href="resources/style.css">
+        <link rel="stylesheet" href="resources/css/component.css">
+        <link rel="stylesheet" href="resources/css/default.css">
+        <style>
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 100%;
+                margin: auto;
+            }
+        </style>
 
     </head>
 
@@ -20,7 +29,7 @@
 
         <!--start navigation-->
         <nav class="navbar navbar-fixed-top">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
                         <span class="sr-only">Toggle navigation</span>
@@ -55,9 +64,53 @@
                         </div>
                     </div>
                 </div>
-                
+
+
                 <div class="content">
-                    kjh
+
+                    <!-- start slider-->
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel"style="width:400px;height:400px;margin-top:180px;margin-left:700px;position: absolute;">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="resources/image/slider/cloud.png" alt="Chania">
+                                </div>
+
+                                <div class="item">
+                                    <img src="resources/image/slider/softwaredevelopment.PNG" alt="Chania">
+                                </div>
+
+                                <div class="item">
+                                    <img src="resources/image/slider/webdevelpoment.png" alt="Flower">
+                                </div>
+
+                                <div class="item">
+                                    <img src="resources/image/slider/mobileAppdevelopment.PNG" alt="Flower">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+                    <!--                    end slider-->
+
                 </div>
             </div>
             <!--end page home-->
@@ -67,134 +120,235 @@
                 <div class="page-title">
                     <h1>OUR PRODUCT RANGE FIT TO YOUR BUSINESS</h1>
                 </div>
+                <div class="container demo-3">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3 product">
+                    <ul class="grid cs-style-3">
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/1.png" alt="img04">
+                                <figcaption>
+                                    <h3>Hotel Management</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/2.png" alt="img01">
+                                <figcaption>
+                                    <h3>Bank</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/3.png" alt="img02">
+                                <figcaption>
+                                    <h3>Tea</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/4.png" alt="img05">
+                                <figcaption>
+                                    <h3>Service</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/5.png" alt="img03">
+                                <figcaption>
+                                    <h3>whole shop</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/6.png" alt="img06">
+                                <figcaption>
+                                    <h3>Game Center</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/4.png" alt="img03">
+                                <figcaption>
+                                    <h3>payroll</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/image/products/2.png" alt="img06">
+                                <figcaption>
+                                    <h3>Quiz</h3>
+                                    <span>Jacob Cummings</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
 
-                        </div>
-                        <div class="col-sm-3 product">
+            </div>
+        </div>
+        <!--end page products-->
 
-                        </div>
-                        <div class="col-sm-3 product">
+        <!--start page clients-->
+        <div id="clients" class="page page-light">
+            <div class="page-title">
+                <h1>KEEP IN TOUCH WITH US</h1>
+            </div>
 
-                        </div>
-                        <div class="col-sm-3 product">
+            <div class="page-footer">
+            </div>
+        </div>
+        <!--end page clients-->
 
-                        </div>  
-                        <div class="col-sm-3 product">
+        <!--start page contact us-->
+        <div id="contact-us" class="page page-dark">
+            <!--
+<div id="googleMap" style="width:100%;height:500px;">
 
-                        </div>
-                        <div class="col-sm-3 product">
-
-                        </div>
-                        <div class="col-sm-3 product">
-
-                        </div>
-                        <div class="col-sm-3 product">
-
-                        </div>
-                    </div>
+</div>
+-->
+            <div style="overflow:hidden;height:500px;width:100%;">
+                <div id="gmap_canvas" style="height:500px;width:100%;">
+                    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                    <a class="google-map-code" href="#" id="get-map-data"></a>
                 </div>
             </div>
-            <!--end page products-->
+            <div class="footer">
 
-            <!--start page clients-->
-            <div id="clients" class="page page-light">
-                <div class="page-title">
-                    <h1>KEEP IN TOUCH WITH US</h1>
-                </div>
-
-
-
-                <div class="page-footer">
-                </div>
             </div>
-            <!--end page clients-->
-
-            <!--start page contact us-->
-            <div id="contact-us" class="page page-dark">
-
-                <div class="footer">
-
-                </div>
-            </div>
-            <!--end page contact us-->
+        </div>
+        <!--end page contact us-->
         </div>
 
-        <script src="resources/jquery/jQuery-2.1.4.min.js"></script>
-        <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/jquery/jQuery-2.1.4.min.js"></script>
+    <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="resources/script/custom.js"></script>
 
-        <script>
+    <script>
 
-            //start smooth scroll
-            $(document).ready(function () {
-                $(document).on("scroll", onScroll);
+        //start smooth scroll
+        $(document).ready(function () {
+            $(document).on("scroll", onScroll);
 
-                //smoothscroll
-                $('a[href^="#"]').on('click', function (e) {
-                    //e.preventDefault();
-                    //$(document).off("scroll");
+            //smoothscroll
+            $('a[href^="#"]').on('click', function (e) {
+                //e.preventDefault();
+                //$(document).off("scroll");
 
-                    $('a').each(function () {
-                        $(this).removeClass('active');
-                    })
-                    $(this).addClass('active');
+                $('a').each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
 
-                    var target = this.hash, menu = target;
-                    $target = $(target);
-                    
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top+2
-                    }, 500, 'swing', function () {
-                        window.location.hash = target;
-                        //$(document).on("scroll", onScroll);
-                    });
+                var target = this.hash, menu = target;
+                $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top+2
+                }, 500, 'swing', function () {
+                    window.location.hash = target;
+                    //$(document).on("scroll", onScroll);
                 });
             });
+        });
 
-            function onScroll(event){
-                var scrollPos = $(document).scrollTop();
-                $('#bs-example-navbar-collapse-2 li').each(function () {
-                    var currLink = $(this);
-                    var aLink = currLink.find('a');
-                    
-                    var refElement = $(aLink.attr("href"));
-                    var top = refElement.position() == undefined ? NaN : refElement.position().top;
-                                    
-                    if (top <= scrollPos && (top + refElement.height()) > scrollPos) {
-                        currLink.addClass("active");
-                    }else{
-                        currLink.removeClass("active");
-                    }
-                    
-                    console.log(top + " - " + scrollPos + " - " + (top + refElement.height()));
-                });
-            }
-            //end smooth scroll
-            
-            //start parallax
-                        $(document).ready(function () {
-                $('#layer-1').mousemove(function (e) {
-                    parallax(e, this, 1);
-                    parallax(e, document.getElementById('layer-2'), 2);
-                    parallax(e, document.getElementById('layer-3'), 4);
-                });
+        function onScroll(event){
+            var scrollPos = $(document).scrollTop();
+            $('#bs-example-navbar-collapse-2 li').each(function () {
+                var currLink = $(this);
+                var aLink = currLink.find('a');
+
+                var refElement = $(aLink.attr("href"));
+                var top = refElement.position() == undefined ? NaN : refElement.position().top;
+
+                if (top <= scrollPos && (top + refElement.height()) > scrollPos) {
+                    currLink.addClass("active");
+                }else{
+                    currLink.removeClass("active");
+                }
+
+                console.log(top + " - " + scrollPos + " - " + (top + refElement.height()));
             });
+        }
+        //end smooth scroll
 
-            function parallax(e, target, layer) {
-                var layer_coeff = 10 / layer;
-                var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
-                var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
-                $(target).offset({ top: y ,left : x });
+        //start parallax
+        $(document).ready(function () {
+            $('#layer-1').mousemove(function (e) {
+                parallax(e, this, 1);
+                parallax(e, document.getElementById('layer-2'), 2);
+                parallax(e, document.getElementById('layer-3'), 4);
+            });
+        });
+
+        function parallax(e, target, layer) {
+            var layer_coeff = 10 / layer;
+            var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
+            var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
+            $(target).offset({ top: y ,left : x });
+        };
+        //end parallax
+
+        //start finish loader
+        //            $("#loader").animate({
+        //                opacity:0;
+        //            },500);
+        //end finish loader
+    </script>
+
+    <!--    google Map-->
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript"> 
+        function init_map(){
+            var myOptions = {
+                scrollwheel: false,
+
+                zoom:16,
+                center:new google.maps.LatLng(6.731125199999999,79.90489350000007),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+                styles: 
+                [
+                    {"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},
+                    {"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},
+                    {"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},
+                    {"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},
+                    {"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},
+                    {"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+                    {"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},
+                    {"featureType":"water","elementType":"all","stylers":[{"color":"#5B5B75"},{"visibility":"on"}]}
+                ]
             };
-            //end parallax
 
-            //start finish loader
-            //            $("#loader").animate({
-            //                opacity:0;
-            //            },500);
-            //end finish loader
-        </script>
+            map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+            marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(6.731125199999999, 79.90489350000007)});
+            infowindow = new google.maps.InfoWindow({content:"<b>Supervision Technology (pvt) Ltd.</b><br/>#87, Old Galle Road,<br/> Walana, Panadura" });
+
+            google.maps.event.addListener(marker, "click", function(){
+                infowindow.open(map,marker);
+            });
+
+            infowindow.open(map,marker);
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+
     </body>
 </html>
