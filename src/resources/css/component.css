@@ -1,5 +1,7 @@
+
+
 .grid {
-	padding: 10px 20px 100px 20px;
+	padding: 10px 20px 100px 14px;
 	max-width: 1300px;
 	margin: 0 auto;
 	list-style: none;
@@ -8,7 +10,7 @@
 
 .grid li {
 	display: inline-block;
-	width: 270px;
+    width: 231px;
 	margin: 0;
 	padding: 10px;
 	text-align: left;

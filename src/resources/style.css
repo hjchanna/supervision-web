@@ -1,3 +1,4 @@
+
 #loader{
     position: fixed;
     background: #062744;
@@ -15,19 +16,24 @@
 }
 
 .navbar-nav>li>a, .navbar-brand {
-    padding-top:27px !important; 
+    padding-top:25px !important; 
     padding-bottom:0 !important;
     height: 72px;
     color: #ffffff !important;
 }
-
-.navbar-nav > li > a:hover{
+.navbar-toggle {
+    margin-right: 8px !important;
+    margin-top: 15px !important;
+}
+.navbar-nav > li >a:hover{
     background-color: #092f4c;
 }
 
 .navbar-brand{
     margin-top: -14px;
+    margin-left: -10px;
 }
+
 
 .navbar-nav>.active>a,  .navbar-nav > li > a:focus {
     background-color: #0e4b77 !important;
@@ -43,14 +49,16 @@
 }
 
 .page{
-    height:100vh;
+    height:auto;
     position: relative;
 }
 
 .page-primary{
+    margin-top: 72px;
     background-color: #2690cf;
     overflow: hidden;
 }
+
 
 .parallax{
     /*    background-repeat: no-repeat;*/
@@ -86,17 +94,32 @@
     background-color: #ffffff;
 }
 
+#products{
+    height: auto;
+}
+
 .page-dark{
     background-color: #e5e5e5;
+   
 }
 
 .page-title{
-    padding-top: 100px;
+    padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
     color: #6d6f72;
 }
 
+.before>img{
+    width:40%;
+    height: auto;
+}
+.after>img{
+    width:40%;
+    height: auto;
+}
+
+/*
 .page-title:before{
     content: url(image/before-line.png);
 }
@@ -104,9 +127,11 @@
 .page-title:after{
     content: url(image/after-line.png);
 }
+*/
 
 .page-title > h1{
-    margin: 0px !important;
+    font-size: 30px !important;
+    margin: 10px !important;
 }
 
 .page-footer{
@@ -120,30 +145,30 @@
 
 .footer{
     background-color: #5b5b5c;
-    height: 200px;
+    height: auto;
     width: 100%;
     bottom: 0;
     position: absolute;
 }
 
 .footer-logo{
-    margin-top: 3%;
-    margin-left: 6%;
+    margin-top: 15%;
+    margin-left: 4%;
     opacity: 0.7;
-    width: 17%;
+    width: 65%;
 
 }
 .qr-code{
-    width: 8%;
-    margin-top: 3%;
+    width: 28%;
+    margin-top: 10%;
     margin-left: 6%;
 }
 
 .contact{
     position: inherit;
 /*    width: 300px;*/
-    margin-left: 42%;
-    margin-top: -10%;
+    margin-left: 2%;
+    margin-top: 1%;
     border-left: 3px solid;
     padding-left: 10px;
 }
